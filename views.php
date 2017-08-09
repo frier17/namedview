@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: a17s
- * Date: 2/18/17
- * Time: 10:57 AM
- */
+
 //define identities
 $default = \App\NamedView\NamedView::ID_OPT_DEFAULT;
 $admin = \App\NamedView\NamedView::ID_OPT_ADMIN;
@@ -174,18 +169,3 @@ NamedView::register('UserController@destroySubscription',
     NamedView::map($names, $view, $identity);
 });
 
-NamedView::register('SUEventController@index',
-    $view = 'suevent.index.blade.php', $identity = $default, function($names, $view, $identity) {
-    NamedView::map($names, $view, $identity);
-});
-
-NamedView::register($names = [
-    'SUEventController@createRegistration',
-    'SUEventController@editRegistration'
-    ], $view = 'suevent.registration.create.blade.php', $identity = $default, function($names, $view, $identity) {
-    NamedView::map($names, $view, $identity);
-});
-
-NamedView::register('SUEventController@show', $view = 'suevent.show.blade.php', $identity = $default, function($names, $view, $identity) {
-    NamedView::map($names, $view, $identity);
-});
