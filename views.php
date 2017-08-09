@@ -1,4 +1,11 @@
 <?php
+/**
+ * Register the various view template files to a given function or methods of Controller. 
+ * The NamedView farcade will enable tags, data, user preferenes to be passed to the view automatically. 
+ * Future works will enable mapping views to routes and support for multiple view types. 
+ * Currently only php and blade.php template supported *
+ * @author frier17 (a17s)
+ */
 
 //define identities
 $default = \App\NamedView\NamedView::ID_OPT_DEFAULT;
