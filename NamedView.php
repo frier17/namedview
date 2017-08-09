@@ -9,7 +9,7 @@ use \Illuminate\Http\Request;
  * Description of NamedView
  * Define functions for the named view for rendering template pages using controller function name
  *
- * @author a17s
+ * @author frier17 (a17s)
  */
 class NamedView {
     
